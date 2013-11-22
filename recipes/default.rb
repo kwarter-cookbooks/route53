@@ -28,6 +28,7 @@ end
 xslt.run_action( :install )
 
 fog = gem_package "fog" do
+  options "--no-ri --no-rdoc"
   action :nothing
 end
 fog.run_action( :install )
